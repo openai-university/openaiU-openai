@@ -1,0 +1,3 @@
+baseURL = 'https://openai.university/'
+languageCode = 'en-us'
+title = 'openai.university'
