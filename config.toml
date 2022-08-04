@@ -1,3 +1,44 @@
-baseURL = 'https://openai.university/'
-languageCode = 'en-us'
-title = 'openai.university'
+####################
+# hugo
+####################
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+title = "OpenAI University"
+summaryLength = 10
+RelativeURLs = false
+CanonifyURLs = true
+enableRobotsTXT = true
+enableEmoji = true
+paginate = 10
+summaryLength = 10
+enableGitInfo = true
+pygmentsCodefences = true
+pygmentsUseClasses = true
+disableHugoGeneratorInject = true
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.94.2"
+timeout = "300s"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+  [markup.goldmark.renderer]
+    hardWraps = true
+    unsafe    = true
+    xhtml     = true
+
+####################
+# site params
+####################
+[params]
+  author = "John Doe"
+  site_name = "OpenAI University"
+  description = "website description"
+  locale = "en-US"
+  type = "website"
+
+  contact_url = "mailto:webmaster@website.com"
