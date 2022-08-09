@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./content/**/*.html", "./layouts/**/*.html", "./static/**/*.js"],
+  content: [
+    "./content/**/*.html",
+    "./layouts/**/*.html",
+    "./static/**/*.{html,js}",
+  ],
   theme: {
     container: {
       center: true,
@@ -25,4 +29,4 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),
   ],
-};
+}

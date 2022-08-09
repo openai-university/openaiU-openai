@@ -7,6 +7,12 @@ seo_keyword:
   - keyword1
   - keyword2
 thumbnail: ""
+tags:
+  - tags1
+  - tags2
+category:
+  - Workshop
+  - Podcast
 slug: "{{ lower .Name | urlize }}"
 ---
 

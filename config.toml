@@ -10,12 +10,12 @@ RelativeURLs = false
 CanonifyURLs = true
 enableRobotsTXT = true
 enableEmoji = true
-paginate = 10
-summaryLength = 10
+paginate = 4
 enableGitInfo = true
 pygmentsCodefences = true
 pygmentsUseClasses = true
 disableHugoGeneratorInject = true
+assetDir = "static/assets"
 
 [module]
 [module.hugoVersion]
@@ -31,6 +31,10 @@ timeout = "300s"
     unsafe    = true
     xhtml     = true
 
+[taxonomies]
+  category = 'category'
+  tag = 'tags'
+
 ####################
 # site params
 ####################
@@ -40,5 +44,8 @@ timeout = "300s"
   description = "website description"
   locale = "en-US"
   type = "website"
+  favicon = "favicon.png"
 
   contact_url = "mailto:webmaster@website.com"
+  twitter = "https://twitter.com/username"
+  youtube = "https://www.youtube.com/channel/channel_url"
