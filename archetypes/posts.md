@@ -6,7 +6,7 @@ seo_description: ""
 seo_keyword:
   - keyword1
   - keyword2
-thumbnail: ""
+thumbnail: "posts/example.jpg"
 tags:
   - tags1
   - tags2

@@ -31,9 +31,9 @@
             </div>
           </a>
         {{- else }}
-            <div class="text-xl font-helvetica font-bold italic ml-5">
-                <span>No Post</span>
-            </div>
+          <div class="ml-5 font-helvetica text-xl font-bold italic">
+            <span>No Post</span>
+          </div>
         {{ end -}}
         <!-- EOL Item #1 -->
       </div>
@@ -66,9 +66,9 @@
             </div>
           </a>
         {{- else }}
-            <div class="text-xl font-helvetica font-bold italic ml-5">
-                <span>No Post</span>
-            </div>
+          <div class="ml-5 font-helvetica text-xl font-bold italic">
+            <span>No Post</span>
+          </div>
         {{ end -}}
         <!-- EOL Item #1 -->
       </div>
@@ -101,9 +101,9 @@
             </div>
           </a>
         {{- else }}
-            <div class="text-xl font-helvetica font-bold italic ml-5">
-                <span>No Post</span>
-            </div>
+          <div class="ml-5 font-helvetica text-xl font-bold italic">
+            <span>No Post</span>
+          </div>
         {{ end -}}
         <!-- EOL Item #1 -->
       </div>
@@ -112,8 +112,21 @@
     <!-- EOL Left Side -->
     <!-- BEGIN RIGHT Side -->
     <div class="col-span-full p-5 lg:col-span-4 lg:p-2">
-      <h3 class="mb-8 text-2xl font-medium leading-7">Tweets</h3>
-      <div>RESERVED</div>
+      {{- if site.Params.twitter }}
+        <h3 class="mb-8 text-2xl font-medium leading-7">Tweets</h3>
+        <div>
+          <a
+            class="twitter-timeline"
+            href="https://twitter.com/OpenaiU?ref_src=twsrc%5Etfw"
+            >Tweets by OpenaiU</a
+          >
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+      {{ end -}}
     </div>
     <!-- EOL RIGHT Side -->
   </div>

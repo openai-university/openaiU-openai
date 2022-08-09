@@ -12,16 +12,16 @@
     <nav>
       <ul class="justify-center gap-9 font-helvetica leading-5 lg:flex">
         <li>
-          <a href="#"> News </a>
+          <a href="/category/news"> News </a>
         </li>
         <li>
-          <a href="#"> Workshop </a>
+          <a href="/category/workshop"> Workshop </a>
         </li>
         <li>
-          <a href="#"> Podcast </a>
+          <a href="/category/podcast"> Podcast </a>
         </li>
         <li>
-          <a href="#"> About </a>
+          <a href="/about"> About </a>
         </li>
       </ul>
     </nav>
@@ -76,10 +76,10 @@
       :class="menuOpen ? 'h-[240px] overflow-y-scroll py-4' : 'h-[0px] overflow-hidden '"
     >
       <ul class="flex flex-col gap-4 font-helvetica">
-        <li class="text-center"><a href="#">News</a></li>
-        <li class="text-center"><a href="#">Workshop</a></li>
-        <li class="text-center"><a href="#">Podcast</a></li>
-        <li class="text-center"><a href="#">About</a></li>
+        <li class="text-center"><a href="/category/news">News</a></li>
+        <li class="text-center"><a href="/category/workshop">Workshop</a></li>
+        <li class="text-center"><a href="/category/podcast">Podcast</a></li>
+        <li class="text-center"><a href="/about">About</a></li>
         <li class="flex justify-center gap-6">
           <a href="{{ site.Params.twitter }}" title="Follow on Twitter" target="_blank">
             <img
